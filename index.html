@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 6 - Basic JavaScript Event Handling and DOM</title>
+	<style type="text/css">
+		.main {
+			text-align: center;
+		}
+		#con1 {
+			width: 400px;
+			margin: 50px auto 0;
+		}
+		#input {
+			width: 100%;
+		}
+		#alertbutton {
+			width: 200px;
+			text-align: center;
+			color: #fff;
+			background-color: #c00;
+			padding: 2em 0;
+			margin: 20px auto;
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="main">ITMD-361 - Lab 6 - Basic JavaScript Event Handling and DOM</h1>
+	<h2 class="main">Changhui Kim</h2>
+	<h3 class="main">ckim44@hawk.iit.edu</h3>
+	<div id="con1">
+	
+	<input id="input" type="text" name="text1" placeholder="Enter a Message">
+	<div id="alertbutton" onclick="alertbutton()">Alert Me</div>
+	<h2 id="result" class="main">Show results here</h2>
+	</div>
+	
+	<script type="text/javascript">
+		function alertbutton(){
+    var d1=document.getElementById("input").value;
+    alert("Changhui Kim:"+d1);
+    document.getElementById("result").innerHTML=d1;
+    }
+	</script>
+</body>
+</html>
